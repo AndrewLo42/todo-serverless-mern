@@ -1,0 +1,47 @@
+service: todo-app-api
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  app:
+    handler: server.run
+    events:
+      - http:
+          path: api/todos
+          method: any
+          cors:
+            allowCredentials: true
+            origin: '*'
+            headers:
+              - accept
+              - Content-Type
+              - Origin
+              - User-Agent
+              - Referer
+              - Access-Control-Allow-Credentials
+
+      - http:
+          path: api/todos/{id}
+          method: any
+          request:
+            parameters:
+              paths:
+                id: true
+          cors:
+            allowCredentials: true
+            origin: '*'
+            headers:
+              - accept
+              - Content-Type
+              - Origin
+              - User-Agent
+              - Referer
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+              - X-Amz-Date
+              - Authorization

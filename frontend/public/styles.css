@@ -1,0 +1,62 @@
+body {
+  background-color: whitesmoke;
+}
+.app-title {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.form-button {
+  width: 45%;
+}
+
+.task-form {
+  width: 33%;
+}
+
+.task-card {
+  padding: 1rem;
+  border: 1px solid black;
+  min-width: 25rem;
+  min-height: 15rem;
+  margin: 2rem;
+  border-radius: 11px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow:  17px 17px 35px #8f8f8f,
+              -17px -17px 35px #ffffff;
+}
+
+.task-complete {
+  color: green;
+}
+
+.task-progress {
+  color: #ce8819;
+}
+
+.task-dismissed {
+  color: #d43e3e;
+}
+
+.task-description {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.form-button,
+.task-button{
+  transition: all 150ms ease-in-out;
+}
+
+.form-button:hover {
+  background-color: #8a8787;
+}
+
+.task-button.complete-task:hover {
+  background-color: #48df48;
+}
+
+.task-button.remove-task:hover {
+  background-color: #e96b6b;
+}
