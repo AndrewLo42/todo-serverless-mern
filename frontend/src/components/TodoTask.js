@@ -97,7 +97,6 @@ const TodoTask = ({item, entries, updateEntries}) => {
       <div className="d-flex justify-content-center">
         {!item.completed ? <button className="task-button complete-task mt-3" onClick={() => editItem(item._id)}>Complete Task</button> : <button className="task-button remove-task mt-3" onClick={() => deleteItem(item._id)}>Remove Task</button>}
       </div>
-      {/* <button onClick={() => editItem(item._id)}>Complete Task</button> */}
     </div>
   )
 }
