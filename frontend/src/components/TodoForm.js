@@ -40,13 +40,6 @@ const TodoForm = ({entries, updateEntries}) => {
         console.log(jsonData)
       })
       .catch(err => console.error(err));
-      // const json = await response.json();
-      // setTitle('');
-      // console.log(json);
-      // const items = this.state.items;
-      // items.unshift(json);
-      // this.setState({ items: items });
-      // this.inputElement.value = '';
     }
   }
 
@@ -61,7 +54,6 @@ const TodoForm = ({entries, updateEntries}) => {
       <div className="d-flex flex-column">
         <input className="title-form mb-3" placeholder="Task Name" value={title} onChange={handleTitleChange} />
         <textarea className="description-form mb-3 " placeholder="Task Description" value={description} onChange={handleDescriptionChange} />
-        {/* <input className="deadline-form mb-3" placeholder="Task Deadline" value={title} onChange={handleTitleChange} /> */}
         <DateTimePicker disableClock={true} onChange={setDeadline} value={deadline}/>
       </div>
       <div className="mt-2 d-flex justify-content-between">
