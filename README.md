@@ -15,4 +15,6 @@ A todo list using a MERN stack with a serverless backend!
 - Serverless Framework
 
 Future Features
+- Add archive option to keep track of finished or expired tasks
 - Add Magic.link, allowing user to log in for a unique experience
+- User has personal tasks and goals
