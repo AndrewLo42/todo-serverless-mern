@@ -18,3 +18,4 @@ Future Features
 - Add archive option to keep track of finished or expired tasks
 - Add Magic.link, allowing user to log in for a unique experience
 - User has personal tasks and goals
+- Ability to edit task
