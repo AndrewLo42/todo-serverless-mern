@@ -19,3 +19,4 @@ Future Features
 - Add Magic.link, allowing user to log in for a unique experience
 - User has personal tasks and goals
 - Ability to edit task
+- Have teams to share tasks or delegate tasks
