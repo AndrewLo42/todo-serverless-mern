@@ -1,7 +1,7 @@
 # A Todo List Challenge
 A todo list using a MERN stack with a serverless backend!
 
-#  Features
+#  Features 
 - User can add a todo  
 - User can add a description to the todo
 - User can set a deadline. The app will provide an alert 10 minutes from the deadline
