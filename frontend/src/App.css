@@ -28,6 +28,12 @@
   color: #61dafb;
 }
 
+.task-card {
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
